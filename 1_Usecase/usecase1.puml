@@ -1,3 +1,5 @@
 @startuml
-(Mein Use Case) as UC1
+(Use Case 1) as UC1
+(Use Case 2) as UC2
+(Use Case 3) as UC3
 @enduml
