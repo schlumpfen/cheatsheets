@@ -1,5 +1,8 @@
 @startuml
-(Use Case 1) as UC1
-(Use Case 2) as UC2
-(Use Case 3) as UC3
+b1 -|> a1
+c1 -|> a1
+package "AF 22" {
+  usecase "Anwendungsfall" as AF1
+  a1 -- AF1
+}
 @enduml
