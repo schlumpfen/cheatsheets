@@ -1,4 +1,5 @@
 @startuml
 [A] -> [B]
 [B] -> [C]
+[C] ---> [A]
 @enduml
