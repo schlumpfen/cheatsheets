@@ -1,3 +1,3 @@
-# UML Diagram Cheat Sheet
-
-Meine eigenen UML Spickzettel für die verschiedenen UML Diagramme
+# Cheat Sheets 8Spickzettel) für verschiede Themen
+ 
+Meine eigenen Spickzettel für die verschiedenen Themen
