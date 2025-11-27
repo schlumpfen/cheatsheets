@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDV-Glossar</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 2rem 1.5rem 3rem;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 0.25rem;
+    }
+    .subtitle {
+      text-align: center;
+      margin-top: 0;
+      color: #475569;
+      font-weight: 500;
+    }
+    .glossary {
+      max-width: 960px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+    details {
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 10px 25px -18px rgba(15, 23, 42, 0.35);
+      transition: transform 120ms ease, box-shadow 120ms ease;
+    }
+    details[open] {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 30px -18px rgba(15, 23, 42, 0.4);
+    }
+    summary {
+      cursor: pointer;
+      padding: 1rem 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    summary::marker {
+      display: none;
+      content: "";
+    }
+    .term {
+      display: inline-flex;
+      padding: 0.3rem 0.65rem;
+      border-radius: 999px;
+      background: #e2e8f0;
+      color: #0f172a;
+      font-size: 0.95rem;
+    }
+    .definition {
+      padding: 0 1.25rem 1.25rem 1.25rem;
+      color: #1e293b;
+    }
+    .definition strong {
+      color: #0f172a;
+    }
+    .meta {
+      margin-top: 1.5rem;
+      padding: 1rem 1.25rem;
+      background: #e2e8f0;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #334155;
+      font-size: 0.95rem;
+    }
+    @media (min-width: 720px) {
+      body {
+        padding: 2.5rem 2rem 3.5rem;
+      }
+      .glossary {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      }
+      details {
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>EDV-Glossar</h1>
+  <p class="subtitle">Kurze Erläuterungen wichtiger IT-Begriffe (Elektronische Datenverarbeitung)</p>
+
+  <section class="glossary">
+    <details>
+      <summary><span class="term">API</span> – Programmierschnittstelle</summary>
+      <div class="definition">
+        Schnittstelle, über die Software-Komponenten miteinander kommunizieren. Eine API definiert, wie Funktionen aufgerufen werden, welche Daten erwartet und zurückgegeben werden und wie Fehler behandelt werden.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">Backup</span> – Datensicherung</summary>
+      <div class="definition">
+        Kopie von Daten, um sie vor Verlust zu schützen. Backups können lokal, auf externen Datenträgern oder in der Cloud erstellt und regelmäßig inkrementell oder differenziell aktualisiert werden.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">Cloud Computing</span> – Rechenleistung aus der Wolke</summary>
+      <div class="definition">
+        Bereitstellung von IT-Ressourcen wie Rechenleistung, Speicher oder Software über das Internet. Nutzer zahlen in der Regel nur, was sie verbrauchen, und können Ressourcen flexibel skalieren.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">Datenbank</span> – Strukturierte Datenspeicherung</summary>
+      <div class="definition">
+        System zur Speicherung und Verwaltung großer Datenmengen. Relationale Datenbanken nutzen Tabellen und SQL, während NoSQL-Varianten flexibelere Strukturen für Dokumente, Schlüssel-Wert-Paare oder Graphen bieten.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">Deployment</span> – Ausrollen von Software</summary>
+      <div class="definition">
+        Prozess, bei dem Anwendungen von der Entwicklungs- in die Produktionsumgebung übertragen werden. Automatisierte Pipelines (CI/CD) reduzieren Fehler und verkürzen die Zeit bis zur Bereitstellung.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">Firewall</span> – Netzwerkschutz</summary>
+      <div class="definition">
+        Sicherheitskomponente, die Netzwerkverkehr überwacht und unerlaubte Zugriffe blockiert. Es gibt Hardware- und Software-Firewalls sowie Next-Generation-Varianten mit Anwendungs- und Inhaltsfiltern.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">Git</span> – Versionsverwaltung</summary>
+      <div class="definition">
+        Verteiltes Versionskontrollsystem, das Änderungen an Dateien nachvollziehbar macht. Branches und Commits erleichtern parallele Entwicklung, Code-Reviews und die Zusammenarbeit in Teams.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">Hardware</span> – Physische IT-Komponenten</summary>
+      <div class="definition">
+        Physische Bestandteile von Computersystemen wie Prozessoren, Speicher, Netzwerkkarten oder Peripheriegeräte. Hardware bildet die Basis, auf der Software ausgeführt wird.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">ISO/OSI-Modell</span> – Netzwerk-Schichtenmodell</summary>
+      <div class="definition">
+        Referenzmodell für Netzwerkkommunikation mit sieben Schichten von der physischen Übertragung bis zur Anwendung. Hilft, Protokolle und Verantwortlichkeiten klar zu trennen.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">LAN</span> – Lokales Netzwerk</summary>
+      <div class="definition">
+        Netzwerk zur Verbindung von Geräten auf begrenzter Fläche wie Büro oder Heim. Nutzt meist Ethernet oder WLAN und ermöglicht hohen Datendurchsatz bei niedriger Latenz.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">Open Source</span> – Offene Software</summary>
+      <div class="definition">
+        Software, deren Quellcode öffentlich zugänglich ist und unter einer Lizenz steht, die Nutzung, Veränderung und Weitergabe erlaubt. Communities entwickeln gemeinsam und transparent.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">Patch</span> – Fehlerbehebung</summary>
+      <div class="definition">
+        Aktualisierung, die Fehler oder Sicherheitslücken schließt. Patches können einzelne Dateien betreffen oder als umfangreiche Service Packs ausgeliefert werden.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">RAM</span> – Arbeitsspeicher</summary>
+      <div class="definition">
+        Kurzzeitspeicher für Daten und Programme, die die CPU aktuell verarbeitet. Mehr RAM ermöglicht flüssigere Multitasking-Fähigkeiten und reduziert Auslagerung auf langsamere Datenträger.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">SaaS</span> – Software as a Service</summary>
+      <div class="definition">
+        Bereitstellungsmodell, bei dem Anwendungen über das Internet genutzt werden. Anbieter kümmern sich um Betrieb, Wartung und Updates, während Nutzer per Browser oder API zugreifen.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">Ticket-System</span> – Aufgabenverwaltung</summary>
+      <div class="definition">
+        Software zur Erfassung, Priorisierung und Nachverfolgung von Anfragen oder Störungen. Unterstützt Service-Teams beim strukturierten Arbeiten und beim Einhalten von SLAs.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">Update</span> – Aktualisierung</summary>
+      <div class="definition">
+        Paket, das neue Funktionen bringt oder Fehler behebt. Regelmäßige Updates halten Systeme sicher und aktuell; Automatisierung reduziert den manuellen Aufwand.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">VPN</span> – Virtuelles privates Netzwerk</summary>
+      <div class="definition">
+        Verschlüsselte Verbindung über ein öffentliches Netzwerk, die entfernte Standorte oder Nutzer sicher mit einem privaten Netzwerk verbindet. Schützt Daten vor Abhören und Manipulation.
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="term">Zwei-Faktor-Authentifizierung (2FA)</span> – Zusätzliche Sicherheit</summary>
+      <div class="definition">
+        Anmeldeverfahren, das zwei unabhängige Nachweise verlangt (z. B. Passwort plus Einmalcode). Erhöht den Schutz vor unbefugtem Zugriff auch bei kompromittierten Passwörtern.
+      </div>
+    </details>
+  </section>
+
+  <section class="meta">
+    <strong>Nutzungshinweise:</strong> Die Begriffe sind kurz gehalten und sollen einen schnellen Überblick über gängige EDV-Konzepte geben. Die Inhalte können als Ausgangspunkt für Schulungen, Onboarding oder Projektdokumentation genutzt werden.
+  </section>
+</body>
+</html>
